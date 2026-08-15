@@ -172,7 +172,7 @@
     z-index: 1;
 }
 
-.divider {
+.form-divider {
     display: flex;
     align-items: center;
     text-align: center;
