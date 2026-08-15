@@ -1,0 +1,16 @@
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+.cache/
+*.log
+.env
+node_modules/
