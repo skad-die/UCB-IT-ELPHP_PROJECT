@@ -443,3 +443,161 @@ input:focus-visible {
     display: block;
   }
 }
+
+
+.site-footer {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  font-size: 0.875rem;
+}
+
+.footer-main {
+  padding-block: 2.5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.footer-heading {
+  color: var(--text-light);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+}
+
+.footer-heading-spaced {
+  margin-top: 1.5rem;
+}
+
+.footer-about .footer-hours {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact i {
+  color: #808080;
+  width: 1rem;
+}
+
+.footer-contact a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: var(--text-light);
+}
+
+.footer-note {
+  line-height: 1.6;
+  margin-bottom: 0.9rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--text-light);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-links a {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--text-light);
+}
+
+.footer-seal {
+  margin-top: 1rem;
+  width: 5.5rem;
+  height: auto;
+  border-radius: 4px;
+}
+
+.footer-bottom {
+  background-color: #111111;
+  padding-block: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-copyright {
+  color: #b3b3b3;
+  font-size: 0.8125rem;
+}
+
+.footer-copyright strong {
+  color: var(--text-light);
+}
+
+.footer-payments {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.footer-payments img {
+  height: 1.375rem;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
