@@ -2,9 +2,461 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - iTech Philippines - PC, IT, Gadgets Online Shop Philippines</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+
+<header class="site-header">
+    <div class="top-bar">
+        <div class="container top-bar-flex">
+            <div class="top-left-links">
+                <a href="#">About Us</a>
+                <span class="divider">|</span>
+                <a href="#">Tech Blog</a>
+                <span class="divider">|</span>
+                <a href="#">Store Locations</a>
+                <span class="divider">|</span>
+                <a href="#" class="icon-link"><i class="fa-solid fa-truck-fast"></i> Track your Order</a>
+            </div>
+            <div class="top-right-links">
+                <a href="#" class="icon-link"><i class="fa-solid fa-shuffle"></i> Compare</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-header">
+        <div class="container main-header-flex">
+
+            <a href="index.html" class="logo" aria-label="iTECH Home">
+                <img src="images/logo.svg" alt="iTECH" class="logo-img" />
+            </a>
+
+            <button class="menu-btn" id="menuToggle" aria-expanded="false" aria-controls="mobileNav">
+                <i class="fa-solid fa-bars"></i>
+                <span>Menu</span>
+            </button>
+
+            <div class="search-bar-container" id="searchBar">
+                <input type="text" placeholder="Search for products" aria-label="Search for products" />
+                <button type="submit" class="search-btn" aria-label="Submit search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="header-right-controls">
+                <button class="mobile-search-toggle" id="searchToggle" aria-label="Open search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <a href="my-account.html" class="user-account">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login / Register</span>
+                </a>
+
+                <a href="cart.html" class="cart-box" aria-label="Shopping Cart">
+                    <div class="cart-icon-wrapper">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-badge">0</span>
+                    </div>
+                    <span class="cart-amount">₱0.00</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <div class="container">
+            <ul class="mobile-nav-items">
+                <li>
+                    <a href="#" class="nav-link sale">
+                        <i class="fa-solid fa-fire"></i> SALE
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-laptop"></i> Laptop Finder
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-cart-flatbed"></i> Pre-Order <span class="square-icon">■</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-wrench"></i> Custom PC Builder
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span class="rog-icon">◢</span> Powered By ASUS
+                    </a>
+                </li>
+                <li><a href="#" class="nav-link">Tech Blog</a></li>
+                <li><a href="#" class="nav-link">Apple</a></li>
+            </ul>
+            <div class="mobile-help-wrapper">
+                <a href="#" class="need-help-btn">Need Help?</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sub-nav">
+        <div class="container sub-nav-flex">
+            <ul class="nav-items">
+                <li>
+                    <a href="#" class="nav-link sale">
+                        <i class="fa-solid fa-fire"></i> SALE
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-laptop"></i> Laptop Finder
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-cart-flatbed"></i> Pre-Order <span class="square-icon">■</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-wrench"></i> Custom PC Builder
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span class="rog-icon">◢</span> Powered By ASUS
+                    </a>
+                </li>
+                <li><a href="#" class="nav-link">Tech Blog</a></li>
+                <li><a href="#" class="nav-link">Apple</a></li>
+            </ul>
+
+            <a href="#" class="need-help-btn">Need Help?</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Step Breadcrumb Banner -->
+<div class="checkout-steps-banner">
+    <div class="container">
+        <ul class="step-nav">
+            <li class="step-item">
+                <span>Shopping cart</span>
+            </li>
+            <li class="step-separator"><i class="fa-solid fa-arrow-right"></i></li>
+            <li class="step-item active">
+                <span>Checkout</span>
+            </li>
+            <li class="step-separator"><i class="fa-solid fa-arrow-right"></i></li>
+            <li class="step-item">
+                <span>Order complete</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<main class="checkout-page-content">
+    <div class="container">
+
+        <p class="coupon-callout">
+            <i class="fa-regular fa-image"></i>
+            <strong>Have a coupon?</strong>
+            <a href="#" class="coupon-link">Click here to enter your code</a>
+        </p>
+
+        <div class="checkout-layout">
+
+            <!-- Left: Billing details form -->
+            <div class="checkout-main">
+                <h1 class="checkout-heading">Billing details</h1>
+
+                <form class="billing-form" action="#" method="POST">
+
+                    <div class="form-row form-row-2">
+                        <div class="form-field">
+                            <label for="first-name">First name <span class="required">*</span></label>
+                            <input type="text" id="first-name" name="first_name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="last-name">Last name <span class="required">*</span></label>
+                            <input type="text" id="last-name" name="last_name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="country">Country / Region <span class="required">*</span></label>
+                            <select id="country" name="country" required>
+                                <option value="PH" selected>Philippines</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="province">Province <span class="required">*</span></label>
+                            <select id="province" name="province" required>
+                                <option value="" selected disabled>Select an option&hellip;</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="city">City <span class="required">*</span></label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="barangay">Barangay <span class="required">*</span></label>
+                            <input type="text" id="barangay" name="barangay" placeholder="Barangay" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="house-no">House No/Block No/Bldg <span class="required">*</span></label>
+                            <input type="text" id="house-no" name="house_no" placeholder="House number and street name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="street-address">Street Address <span class="required">*</span></label>
+                            <input type="text" id="street-address" name="street_address" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="postcode">Postcode / ZIP <span class="required">*</span></label>
+                            <input type="text" id="postcode" name="postcode" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="mobile">Mobile <span class="required">*</span></label>
+                            <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="phone">Phone <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">Email address <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <input type="email" id="email" name="email" required>
+                                <i class="fa-solid fa-circle-check input-icon-valid"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="checkbox-field">
+                            <input type="checkbox" id="ship-different" name="ship_different">
+                            <span>Ship to a different address?</span>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="order-notes">Order notes (optional)</label>
+                            <textarea id="order-notes" name="order_notes" rows="4" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Right: Order summary + payment -->
+            <aside class="checkout-sidebar">
+                <div class="order-card">
+                    <h2 class="order-title">Your order</h2>
+
+                    <div class="order-table-head">
+                        <span>Product</span>
+                        <span>Subtotal</span>
+                    </div>
+
+                    <div class="order-line-item">
+                        <span class="order-item-name">Product name &times; 1</span>
+                        <span class="order-item-price">₱0.00</span>
+                    </div>
+
+                    <div class="order-row">
+                        <span class="label">Subtotal</span>
+                        <span class="amount">₱0.00</span>
+                    </div>
+
+                    <div class="order-row">
+                        <span class="label">Shipment</span>
+                        <span class="value-muted">Deliver to Store</span>
+                    </div>
+
+                    <div class="order-row order-row-stacked">
+                        <span class="label label-strong">Deliver to Store</span>
+                        <select class="store-select" name="store">
+                            <option value="" selected disabled>Select a store</option>
+                        </select>
+                    </div>
+
+                    <p class="order-heads-up">
+                        Heads up! Delivery to your preferred branch may vary depending on product availability. Lead time can be around 2-10 days. Note that only the person named on the billing address for this order is allowed to pick it up. For your security, please bring a Valid photo ID, the credit card used for this purchase and the email invoice.
+                    </p>
+
+                    <div class="order-row order-row-total">
+                        <span class="label">Total</span>
+                        <span class="amount">₱0.00</span>
+                    </div>
+
+                    <button type="button" class="btn-print">
+                        <i class="fa-solid fa-print"></i> Print
+                    </button>
+
+                    <!-- Payment Methods -->
+                    <div class="payment-methods">
+
+                        <label class="payment-option">
+                            <input type="radio" name="payment_method" checked>
+                            <span class="payment-option-label">Direct bank transfer</span>
+                        </label>
+                        <div class="payment-option-details">
+                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will be processed once your payment is confirmed in our account.</p>
+                            <p>Please deposit or send money within the day of order otherwise order will be canceled.</p>
+                            <hr>
+                            <p>
+                                Bank name<br>
+                                Account holder: Account holder name<br>
+                                Account number: 0000-0000-00 (Savings)
+                            </p>
+                            <hr>
+                            <p>Once payment is sent, please email a copy of Payment Screenshot to your-email@example.com with the following details:</p>
+                            <p>
+                                Subject: ORDER Number and AMOUNT<br>
+                                Attachment: Screenshot of transaction
+                            </p>
+                            <p>We will process your order once your Payment is confirmed. (Payment will be confirmed on Mondays &ndash; Friday 8AM &ndash; 4PM and Saturday 8AM &ndash; 3PM)</p>
+                        </div>
+
+                        <label class="payment-option">
+                            <input type="radio" name="payment_method">
+                            <span class="payment-option-label">Gcash via QR</span>
+                        </label>
+
+                        <label class="payment-option">
+                            <input type="radio" name="payment_method">
+                            <span class="payment-option-label">Straight Payments</span>
+                            <span class="payment-option-icons">
+                                <img src="images/payments.png" alt="payment">
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <p class="privacy-note">
+                        Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="#">privacy policy</a>.
+                    </p>
+
+                    <label class="checkbox-field terms-field">
+                        <input type="checkbox" id="agree-terms" name="agree_terms">
+                        <span>After clicking &ldquo;Proceed to Payment,&rdquo; you will be directed to one of our trusted partners to complete your purchase. <span class="required">*</span></span>
+                    </label>
+
+                    <button type="button" class="btn-place-order">Place order</button>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-main">
+        <div class="container footer-grid">
+
+            <div class="footer-col footer-about">
+                <p class="footer-hours">
+                    Our Business is open on weekdays from 10:00 AM to 8:00 PM and on weekends from 9:00 AM to 10:00 PM
+                </p>
+                <p class="footer-contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:09190890960">09190890960</a>
+                </p>
+                <p class="footer-contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:inquiry@itech.com.ph">inquiry@itech.com.ph</a>
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Support Service</h3>
+                <p class="footer-note">
+                    In-store pricing may vary. Prices and offers are subject to change.
+                </p>
+                <h3 class="footer-heading footer-heading-spaced">Likes and Follow Us</h3>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Track An Order</a></li>
+                    <li><a href="#">Store Locations</a></li>
+                    <li><a href="#">Warranty and Exchange</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-heading">Useful Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-info">
+                <h3 class="footer-heading">Information</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-flex">
+            <p class="footer-copyright">
+                &copy; 2024 <strong>iTech Philippines</strong>. All Rights Reserved.
+            </p>
+            <div class="footer-payments">
+                <img src="images/payments.png" alt="GCash" />
+
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
