@@ -348,7 +348,7 @@
 }
 
 .checkout-steps-banner {
-  background-color: var(--primary);
+  background-color: var(--primary, #0033a0);
   padding-block: 0.9rem;
 }
 

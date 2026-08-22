@@ -4,205 +4,259 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>iTech Philippines - PC, IT, Gadgets Online Shop Philippines</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="top-bar">
-      <div class="container top-bar-flex">
-        <div class="top-left-links">
-          <a href="#">About Us</a>
-          <span class="divider">|</span>
-          <a href="#">Tech Blog</a>
-          <span class="divider">|</span>
-          <a href="#">Store Locations</a>
-          <span class="divider">|</span>
-          <a href="#" class="icon-link"><i class="fa-solid fa-truck-fast"></i> Track your Order</a>
-        </div>
-        <div class="top-right-links">
-          <a href="#" class="icon-link"><i class="fa-solid fa-shuffle"></i> Compare</a>
-        </div>
+<header class="site-header">
+  <div class="top-bar text-white py-1">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="text-white text-decoration-none">About Us</a>
+        <span class="text-white-50">|</span>
+        <a href="#" class="text-white text-decoration-none">Tech Blog</a>
+        <span class="text-white-50">|</span>
+        <a href="#" class="text-white text-decoration-none">Store Locations</a>
+        <span class="text-white-50">|</span>
+        <a href="#" class="text-white text-decoration-none icon-link"><i class="fa-solid fa-truck-fast"></i> Track your Order</a>
       </div>
-    </div>
-
-    <div class="main-header">
-      <div class="container main-header-flex">
-
-        <a href="index.html" class="logo" aria-label="iTECH Home">
-          <img src="images/logo.svg" alt="iTECH" class="logo-img" />
-        </a>
-
-        <button class="menu-btn" id="menuToggle" aria-expanded="false" aria-controls="mobileNav">
-          <i class="fa-solid fa-bars"></i>
-          <span>Menu</span>
-        </button>
-
-        <div class="search-bar-container" id="searchBar">
-          <input type="text" placeholder="Search for products" aria-label="Search for products" />
-          <button type="submit" class="search-btn" aria-label="Submit search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-
-        <div class="header-right-controls">
-          <button class="mobile-search-toggle" id="searchToggle" aria-label="Open search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-
-          <a href="my-account.html" class="user-account">
-            <i class="fa-regular fa-user"></i>
-            <span>Login / Register</span>
-          </a>
-
-          <a href="cart.html" class="cart-box" aria-label="Shopping Cart">
-            <div class="cart-icon-wrapper">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <span class="cart-badge">0</span>
-            </div>
-            <span class="cart-amount">₱0.00</span>
-          </a>
-        </div>
-
+      <div class="d-none d-lg-flex align-items-center">
+        <a href="#" class="text-white text-decoration-none icon-link"><i class="fa-solid fa-shuffle"></i> Compare</a>
       </div>
-    </div>
-
-    <div class="mobile-nav" id="mobileNav">
-      <div class="container">
-        <ul class="mobile-nav-items">
-          <li>
-            <a href="#" class="nav-link sale">
-              <i class="fa-solid fa-fire"></i> SALE
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">
-              <i class="fa-solid fa-laptop"></i> Laptop Finder
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">
-              <i class="fa-solid fa-cart-flatbed"></i> Pre-Order <span class="square-icon">■</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">
-              <i class="fa-solid fa-wrench"></i> Custom PC Builder
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">
-              <span class="rog-icon">◢</span> Powered By ASUS
-            </a>
-          </li>
-          <li><a href="#" class="nav-link">Tech Blog</a></li>
-          <li><a href="#" class="nav-link">Apple</a></li>
-        </ul>
-        <div class="mobile-help-wrapper">
-          <a href="#" class="need-help-btn">Need Help?</a>
-        </div>
-      </div>
-    </div>
-
-    <nav class="sub-nav">
-      <div class="container sub-nav-flex">
-        <ul class="nav-items">
-          <li>
-            <a href="#" class="nav-link sale">
-              <i class="fa-solid fa-fire"></i> SALE
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">
-              <i class="fa-solid fa-laptop"></i> Laptop Finder
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">
-              <i class="fa-solid fa-cart-flatbed"></i> Pre-Order <span class="square-icon">■</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">
-              <i class="fa-solid fa-wrench"></i> Custom PC Builder
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">
-              <span class="rog-icon">◢</span> Powered By ASUS
-            </a>
-          </li>
-          <li><a href="#" class="nav-link">Tech Blog</a></li>
-          <li><a href="#" class="nav-link">Apple</a></li>
-        </ul>
-
-        <a href="#" class="need-help-btn">Need Help?</a>
-      </div>
-    </nav>
-  </header>
-</body>
-
-<footer class="site-footer">
-  <div class="footer-main">
-    <div class="container footer-grid">
-
-      <div class="footer-col footer-about">
-        <p class="footer-hours">
-          Our Business is open on weekdays from 10:00 AM to 8:00 PM and on weekends from 9:00 AM to 10:00 PM
-        </p>
-        <p class="footer-contact">
-          <i class="fa-solid fa-phone"></i>
-          <a href="tel:09190890960">09190890960</a>
-        </p>
-        <p class="footer-contact">
-          <i class="fa-solid fa-envelope"></i>
-          <a href="mailto:inquiry@itech.com.ph">inquiry@itech.com.ph</a>
-        </p>
-      </div>
-
-      <div class="footer-col">
-        <h3 class="footer-heading">Support Service</h3>
-        <p class="footer-note">
-          In-store pricing may vary. Prices and offers are subject to change.
-        </p>
-        <h3 class="footer-heading footer-heading-spaced">Likes and Follow Us</h3>
-        <div class="footer-socials">
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h3 class="footer-heading">Categories</h3>
-        <ul class="footer-links">
-          <li><a href="#">Track An Order</a></li>
-          <li><a href="#">Store Locations</a></li>
-          <li><a href="#">Warranty and Exchange</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3 class="footer-heading">Useful Links</h3>
-        <ul class="footer-links">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-      </div>
-
     </div>
   </div>
 
-  <div class="footer-bottom">
-    <div class="container footer-bottom-flex">
-      <p class="footer-copyright">
-        &copy; 2024 <strong>iTech Philippines</strong>. All Rights Reserved.
+  <div class="main-header bg-white py-3 position-relative">
+    <div class="container d-flex align-items-center justify-content-between gap-3">
+
+      <button class="menu-btn btn d-xl-none p-0 border-0 fw-bold d-flex align-items-center gap-2" id="menuToggle" aria-expanded="false" aria-controls="mobileNav">
+        <i class="fa-solid fa-bars fs-5"></i>
+        <span>Menu</span>
+      </button>
+
+      <a href="index.html" class="logo d-flex align-items-center text-decoration-none" aria-label="iTECH Home">
+        <img src="images/logo.svg" alt="iTECH" class="logo-img" />
+      </a>
+
+      <div class="search-bar-container flex-grow-1 mx-lg-4 d-none d-xl-flex align-items-center px-3">
+        <input type="text" class="form-control border-0 shadow-none bg-transparent" placeholder="Search for products" aria-label="Search for products" />
+        <button type="submit" class="search-btn btn border-0 bg-transparent" aria-label="Submit search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="header-right-controls d-flex align-items-center gap-3 ms-auto ms-xl-0">
+        <button class="mobile-search-toggle btn d-xl-none p-0 border-0 fs-5" id="searchToggle" aria-label="Open search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <a href="my-account.html" class="user-account text-dark text-decoration-none fw-bold d-none d-xl-flex align-items-center gap-2">
+          <i class="fa-regular fa-user fs-5"></i>
+          <span>Login / Register</span>
+        </a>
+
+        <a href="cart.html" class="cart-box text-dark text-decoration-none d-flex align-items-center gap-2" aria-label="Shopping Cart">
+          <div class="cart-icon-wrapper position-relative d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-cart-shopping fs-5"></i>
+            <span class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">0</span>
+          </div>
+          <span class="cart-amount fw-bold d-none d-xl-inline">₱0.00</span>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="container d-xl-none mt-2" id="mobileSearchContainer" style="display: none;">
+      <div class="search-bar-container w-100 d-flex align-items-center px-3 bg-light border rounded-pill">
+        <input type="text" class="form-control border-0 shadow-none bg-transparent" placeholder="Search for products" aria-label="Search for products" />
+        <button type="submit" class="search-btn btn border-0 bg-transparent" aria-label="Submit search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-nav d-xl-none bg-white border-bottom py-3" id="mobileNav" style="display: none;">
+    <div class="container">
+      <ul class="mobile-nav-items list-unstyled m-0">
+        <li class="border-bottom py-2"><a href="#" class="nav-link text-danger fw-bold text-decoration-none"><i class="fa-solid fa-fire"></i> SALE</a></li>
+        <li class="border-bottom py-2"><a href="#" class="nav-link text-dark fw-bold text-decoration-none"><i class="fa-solid fa-laptop"></i> Laptop Finder</a></li>
+        <li class="border-bottom py-2"><a href="#" class="nav-link text-dark fw-bold text-decoration-none"><i class="fa-solid fa-cart-flatbed"></i> Pre-Order <span class="text-warning">■</span></a></li>
+        <li class="border-bottom py-2"><a href="#" class="nav-link text-dark fw-bold text-decoration-none"><i class="fa-solid fa-wrench"></i> Custom PC Builder</a></li>
+        <li class="border-bottom py-2"><a href="#" class="nav-link text-dark fw-bold text-decoration-none"><span class="text-danger">◢</span> Powered By ASUS</a></li>
+        <li class="border-bottom py-2"><a href="#" class="nav-link text-dark fw-bold text-decoration-none">Tech Blog</a></li>
+        <li class="py-2"><a href="#" class="nav-link text-dark fw-bold text-decoration-none">Apple</a></li>
+      </ul>
+      <div class="mobile-help-wrapper mt-3">
+        <a href="#" class="need-help-btn btn btn-primary w-100 rounded-pill fw-bold">Need Help?</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="sub-nav d-none d-xl-block border-top border-bottom">
+    <div class="container d-flex align-items-center justify-content-between">
+      <ul class="nav-items nav align-items-center flex-nowrap overflow-auto m-0 p-0">
+        <li class="nav-item border-end"><a href="#" class="nav-link text-danger fw-bold px-3 py-2"><i class="fa-solid fa-fire"></i> SALE</a></li>
+        <li class="nav-item border-end"><a href="#" class="nav-link text-dark fw-bold px-3 py-2"><i class="fa-solid fa-laptop"></i> Laptop Finder</a></li>
+        <li class="nav-item border-end"><a href="#" class="nav-link text-dark fw-bold px-3 py-2"><i class="fa-solid fa-cart-flatbed"></i> Pre-Order <span class="text-warning">■</span></a></li>
+        <li class="nav-item border-end"><a href="#" class="nav-link text-dark fw-bold px-3 py-2"><i class="fa-solid fa-wrench"></i> Custom PC Builder</a></li>
+        <li class="nav-item border-end"><a href="#" class="nav-link text-dark fw-bold px-3 py-2"><span class="text-danger">◢</span> Powered By ASUS</a></li>
+        <li class="nav-item border-end"><a href="#" class="nav-link text-dark fw-bold px-3 py-2">Tech Blog</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark fw-bold px-3 py-2">Apple</a></li>
+      </ul>
+      <a href="#" class="need-help-btn btn btn-primary rounded-pill fw-bold px-4 py-2">Need Help?</a>
+    </div>
+  </nav>
+</header>
+
+<main class="my-4">
+  <div class="container">
+    <div id="itechHeroCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#itechHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#itechHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#itechHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-dark text-white py-5 px-4" style="min-height: 400px; background: linear-gradient(135deg, #111 0%, #333 100%);">
+          <div class="row align-items-center h-100 py-5">
+            <div class="col-lg-6 text-center text-lg-start ps-lg-5">
+              <span class="badge bg-danger mb-2 px-3 py-2 text-uppercase fw-bold">New Arrival</span>
+              <h1 class="display-5 fw-bold mb-3">Next-Gen Gaming Laptops</h1>
+              <p class="lead text-secondary mb-4">Equipped with powerful graphics and high-refresh-rate displays for peak competitive performance.</p>
+              <a href="#" class="btn btn-primary btn-lg rounded-pill px-4 fw-bold">Shop Laptops</a>
+            </div>
+            <div class="col-lg-6 text-center d-none d-lg-block">
+              <div class="p-5 border border-secondary border-opacity-25 rounded bg-black bg-opacity-50">
+                <i class="fa-solid fa-laptop text-secondary opacity-50" style="font-size: 7rem;"></i>
+                <p class="text-muted mt-3 mb-0 small">Placeholder Image / Banner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item bg-dark text-white py-5 px-4" style="min-height: 400px; background: linear-gradient(135deg, #1b1b2f 0%, #162447 100%);">
+          <div class="row align-items-center h-100 py-5">
+            <div class="col-lg-6 text-center text-lg-start ps-lg-5">
+              <span class="badge bg-warning text-dark mb-2 px-3 py-2 text-uppercase fw-bold">Custom Builds</span>
+              <h1 class="display-5 fw-bold mb-3">Build Your Dream PC</h1>
+              <p class="lead text-secondary mb-4">Pick your components and let our experts assemble a rig tailored to your exact gaming or workspace needs.</p>
+              <a href="#" class="btn btn-warning btn-lg rounded-pill px-4 fw-bold text-dark">Open PC Builder</a>
+            </div>
+            <div class="col-lg-6 text-center d-none d-lg-block">
+              <div class="p-5 border border-secondary border-opacity-25 rounded bg-black bg-opacity-50">
+                <i class="fa-solid fa-wrench text-secondary opacity-50" style="font-size: 7rem;"></i>
+                <p class="text-muted mt-3 mb-0 small">Placeholder Image / Banner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item bg-dark text-white py-5 px-4" style="min-height: 400px; background: linear-gradient(135deg, #2b1111 0%, #471616 100%);">
+          <div class="row align-items-center h-100 py-5">
+            <div class="col-lg-6 text-center text-lg-start ps-lg-5">
+              <span class="badge bg-primary mb-2 px-3 py-2 text-uppercase fw-bold">Special Promo</span>
+              <h1 class="display-5 fw-bold mb-3">Exclusive Peripherals Sale</h1>
+              <p class="lead text-secondary mb-4">Upgrade your setup with mechanical keyboards, high-DPI mice, and spatial audio headsets at discounted rates.</p>
+              <a href="#" class="btn btn-light btn-lg rounded-pill px-4 fw-bold text-dark">Explore Deals</a>
+            </div>
+            <div class="col-lg-6 text-center d-none d-lg-block">
+              <div class="p-5 border border-secondary border-opacity-25 rounded bg-black bg-opacity-50">
+                <i class="fa-solid fa-headset text-secondary opacity-50" style="font-size: 7rem;"></i>
+                <p class="text-muted mt-3 mb-0 small">Placeholder Image / Banner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#itechHeroCarousel" data-bs-slide="prev" aria-label="Previous">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#itechHeroCarousel" data-bs-slide="next" aria-label="Next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer bg-dark text-secondary">
+  <div class="footer-main py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 footer-about">
+          <h3 class="footer-heading text-white fs-6 fw-bold text-uppercase mb-3">About iTech</h3>
+          <p class="footer-hours text-light mb-3 lh-base">
+            Our Business is open on weekdays from 10:00 AM to 8:00 PM and on weekends from 9:00 AM to 10:00 PM
+          </p>
+          <p class="footer-contact d-flex align-items-center gap-2 mb-2">
+            <i class="fa-solid fa-phone text-muted"></i>
+            <a href="tel:09190890960" class="text-secondary text-decoration-none">09190890960</a>
+          </p>
+          <p class="footer-contact d-flex align-items-center gap-2">
+            <i class="fa-solid fa-envelope text-muted"></i>
+            <a href="mailto:inquiry@itech.com.ph" class="text-secondary text-decoration-none">inquiry@itech.com.ph</a>
+          </p>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h3 class="footer-heading text-white fs-6 fw-bold text-uppercase mb-3">Support Service</h3>
+          <p class="footer-note text-secondary mb-3 lh-base">
+            In-store pricing may vary. Prices and offers are subject to change.
+          </p>
+          <ul class="footer-links list-unstyled d-flex flex-column gap-2 m-0">
+            <li><a href="#" class="text-secondary text-decoration-none">Track An Order</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Store Locations</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Warranty and Exchange</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h3 class="footer-heading text-white fs-6 fw-bold text-uppercase mb-3">Useful Links</h3>
+          <ul class="footer-links list-unstyled d-flex flex-column gap-2 m-0 mb-4">
+            <li><a href="#" class="text-secondary text-decoration-none">About us</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Blog</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Contact us</a></li>
+          </ul>
+          <h3 class="footer-heading text-white fs-6 fw-bold text-uppercase mb-3">Information</h3>
+          <ul class="footer-links list-unstyled d-flex flex-column gap-2 m-0">
+            <li><a href="#" class="text-secondary text-decoration-none">Terms &amp; Conditions</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <h3 class="footer-heading text-white fs-6 fw-bold text-uppercase mb-3">Likes and Follow Us</h3>
+          <div class="footer-socials d-flex gap-2 mb-4">
+            <a href="#" class="text-white text-decoration-none bg-secondary bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="text-white text-decoration-none bg-secondary bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <h3 class="footer-heading text-white fs-6 fw-bold text-uppercase mb-3">We Accept</h3>
+          <div class="footer-payments d-flex align-items-center gap-2">
+            <img src="images/payments.png" alt="Payment Methods" height="24" class="img-fluid" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom bg-black py-3 border-top border-secondary border-opacity-25">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <p class="footer-copyright text-secondary m-0 fs-7">
+        &copy; 2026 <strong class="text-white">iTech Philippines</strong>. All Rights Reserved.
       </p>
-      <div class="footer-payments">
-        <img src="images/payments.png" alt="payments" />
+      <div class="footer-payments d-flex align-items-center gap-3">
+        <img src="images/payments.png" alt="GCash" height="22" />
       </div>
     </div>
   </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzinyinhy9GkcIdslK1eN7N6jI" crossorigin="anonymous"></script>
+</body>
 </html>
